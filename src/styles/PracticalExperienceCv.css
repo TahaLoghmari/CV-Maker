@@ -1,0 +1,36 @@
+.practicalExperienceCvTitle {
+  border-bottom: solid 1px;
+  padding-bottom: 3px;
+  margin-bottom: 2px;
+}
+.header,
+.header2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header {
+  font-size: 14px;
+}
+.header2,
+.description {
+  font-size: 12px;
+}
+.PracticalExperiencedescription {
+  padding-left: 30px;
+  font-size: 12px;
+}
+.positionTitle {
+  font-weight: 600;
+}
+.position {
+  margin-bottom: 5px;
+}
+.startEndDates,
+.place {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.9);
+}
+.practicalExperienceCvTitleRest {
+  font-size: 12px;
+}

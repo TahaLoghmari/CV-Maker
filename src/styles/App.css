@@ -1,0 +1,42 @@
+.container {
+  min-width: 100%;
+  min-height: 100%;
+  display: flex;
+}
+.cvCreation {
+  max-width: 40%;
+  min-height: 100vh;
+  flex: 1;
+  overflow-y: auto;
+}
+.cvResult {
+  flex: 1;
+  overflow: hidden;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+label {
+  display: flex;
+  flex-direction: column;
+  color: #79787c;
+  margin-bottom: 10px;
+}
+input,
+textarea {
+  border-radius: 5px;
+  border: 0;
+  background-color: #efeff0;
+  height: 36px;
+  width: 324px;
+  padding: 16px 12px;
+}
+textarea {
+  width: 668px;
+  height: 176px;
+  list-style: circle;
+}
+a {
+  color: black;
+}

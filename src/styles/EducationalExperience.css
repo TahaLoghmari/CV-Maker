@@ -1,0 +1,45 @@
+.EducationalExperience {
+  padding: 40px;
+  background-color: white;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 5px;
+}
+.EducationalExperience .content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.EduExpTitle {
+  font-weight: bold;
+  font-size: 24px;
+}
+.addEducation {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+  padding-left: 25px;
+  cursor: pointer;
+}
+.addEducation:hover {
+  background-color: #f6faff;
+}
+.addEducation button {
+  background-color: white;
+  border: 0;
+  color: #448fed;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+}
+.EducationalExperience .content {
+  padding: 25px;
+  border: 1px solid #efeff0;
+  border-radius: 8px;
+  position: relative;
+}
+

@@ -1,0 +1,16 @@
+.blockCV {
+  display: flex;
+  gap: 5px;
+}
+.TechnicalSkillsCVTitle {
+  border-bottom: solid 1px;
+  padding-bottom: 3px;
+  margin-bottom: 2px;
+}
+.TechnicalSkillsTitleCVRest,
+.TechnicalSkillCVContent {
+  font-size: 12px;
+}
+.blockTitle {
+  font-weight: 600;
+}

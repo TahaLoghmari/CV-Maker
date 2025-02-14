@@ -1,0 +1,24 @@
+.educationExperienceCv {
+  color: rgb(0, 0, 0);
+}
+.eduTitle {
+  border-bottom: solid 1px;
+  padding-bottom: 3px;
+  margin-bottom: 2px;
+}
+.eduTitleRest {
+  font-size: 12px;
+}
+.secondLine {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.9);
+}
+.schoolNameCV {
+  font-weight: 600;
+  font-size: 14px;
+  padding-bottom: 3px;
+  padding-top: 3px;
+}
