@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-import "../../styles/PracticalExperienceCv.css";
 function Positions({ positions }) {
   return positions.map((position, index) => (
     <Position

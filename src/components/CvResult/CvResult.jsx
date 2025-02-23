@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-import "../../styles/cvResult.css";
 import PersonalDetailsCV from "./PersonalDetailsCV";
 import EducationalExperienceCV from "./EducationalExperienceCV";
 import PracticalExperienceCV from "./PracticalExperienceCV";
@@ -9,7 +8,7 @@ import TechnicalSkillsCV from "./TechnicalSkillsCV";
 import { useRef } from "react";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
-export default function CvResult({ info }) {
+export default function CvResult({ info, toggle }) {
   const {
     personalDetails,
     educationalExperience,
@@ -34,11 +33,20 @@ export default function CvResult({ info }) {
     pdf.save("cv.pdf");
   };
   return (
-    <div className="cvResult">
-      <button className="PDF" onClick={handleDownloadPdf}>
+    <div
+      className={
+        toggle
+          ? "hidden xl:flex xl:h-full xl:w-1/2 xl:flex-col xl:items-center xl:justify-center"
+          : "flex h-full w-full flex-col items-center justify-center gap-4 bg-gray-400 xl:w-1/2"
+      }
+    >
+      <button
+        className="cursor-pointer rounded-md bg-sky-400 p-2 text-white hover:bg-sky-500"
+        onClick={handleDownloadPdf}
+      >
         Download PDF
       </button>
-      <div ref={componentRef} className="cvContainer">
+      <div ref={componentRef} className="h-[85%] w-[65%] rounded-md bg-white">
         <PersonalDetailsCV
           firstName={personalDetails.firstName}
           lastName={personalDetails.lastName}

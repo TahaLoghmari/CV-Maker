@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-import "../../styles/EducationalExperienceCv.css";
 function Educations({ educations }) {
   return educations.map((education, index) => (
     <Education

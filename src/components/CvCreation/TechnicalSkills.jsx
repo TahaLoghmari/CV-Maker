@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-import "../../styles/TechnicalSkills.css";
 
 export default function TechnicalSkills({
   languages,
@@ -10,17 +9,20 @@ export default function TechnicalSkills({
   set,
 }) {
   return (
-    <div className="technicalSkills">
-      <p className="technicalSkillsTitle">Technical Skills</p>
-      <div className="content">
-        <div className="languages">
+    <div className="flex w-full flex-col gap-4 rounded-t-lg rounded-b-lg bg-white p-7">
+      <p className="text-xl font-extrabold">Technical Skills</p>
+      <div className="flex flex-col flex-wrap justify-between gap-4 md:flex-row">
+        <div className="w-full md:w-[48%]">
           {languages.map((language, index) => (
-            <div className="language" key={index}>
-              <label htmlFor={`language-${index}`}>Languages</label>
+            <div className="flex flex-col gap-3" key={index}>
+              <label htmlFor={`language-${index}`} className="text-gray-600">
+                Languages
+              </label>
               <input
                 type="text"
                 name="language"
                 id={`language-${index}`}
+                className="h-10 w-full rounded-md bg-gray-100 p-2 placeholder:text-gray-600"
                 value={language}
                 onChange={(e) => {
                   const newLanguages = [...languages];
@@ -37,14 +39,17 @@ export default function TechnicalSkills({
             </div>
           ))}
         </div>
-        <div className="frameworks">
+        <div className="w-full md:w-[48%]">
           {frameworks.map((framework, index) => (
-            <div className="framework" key={index}>
-              <label htmlFor={`framework-${index}`}>Frameworks</label>
+            <div className="flex flex-col gap-3" key={index}>
+              <label htmlFor={`framework-${index}`} className="text-gray-600">
+                Frameworks
+              </label>
               <input
                 type="text"
                 name="framework"
                 id={`framework-${index}`}
+                className="h-10 w-full rounded-md bg-gray-100 p-2 placeholder:text-gray-600"
                 value={framework}
                 onChange={(e) => {
                   const newFrameworks = [...frameworks];
@@ -61,14 +66,20 @@ export default function TechnicalSkills({
             </div>
           ))}
         </div>
-        <div className="developerTools">
+        <div className="w-full md:w-[48%]">
           {developerTools.map((developerTool, index) => (
-            <div className="developerTool" key={index}>
-              <label htmlFor={`developerTool-${index}`}>Developer Tools</label>
+            <div className="flex flex-col gap-3" key={index}>
+              <label
+                htmlFor={`developerTool-${index}`}
+                className="text-gray-600"
+              >
+                Developer Tools
+              </label>
               <input
                 type="text"
                 name="developerTool"
                 id={`developerTool-${index}`}
+                className="h-10 w-full rounded-md bg-gray-100 p-2 placeholder:text-gray-600"
                 value={developerTool}
                 onChange={(e) => {
                   const newDeveloperTools = [...developerTools];
@@ -85,14 +96,17 @@ export default function TechnicalSkills({
             </div>
           ))}
         </div>
-        <div className="libraries">
+        <div className="w-full md:w-[48%]">
           {libraries.map((library, index) => (
-            <div className="library" key={index}>
-              <label htmlFor={`library-${index}`}>Libraries</label>
+            <div className="flex flex-col gap-3" key={index}>
+              <label htmlFor={`library-${index}`} className="text-gray-600">
+                Libraries
+              </label>
               <input
                 type="text"
                 name="library"
                 id={`library-${index}`}
+                className="h-10 w-full rounded-md bg-gray-100 p-2 placeholder:text-gray-600"
                 value={library}
                 onChange={(e) => {
                   const newLibraries = [...libraries];
@@ -109,14 +123,17 @@ export default function TechnicalSkills({
             </div>
           ))}
         </div>
-        <div className="others">
+        <div className="w-full md:w-[48%]">
           {others.map((other, index) => (
-            <div className="other" key={index}>
-              <label htmlFor={`other-${index}`}>Others</label>
+            <div className="flex flex-col gap-3" key={index}>
+              <label htmlFor={`other-${index}`} className="text-gray-600">
+                Others
+              </label>
               <input
                 type="text"
                 name="other"
                 id={`other-${index}`}
+                className="h-10 w-full rounded-md bg-gray-100 p-2 placeholder:text-gray-600"
                 value={other}
                 onChange={(e) => {
                   const newOthers = [...others];

@@ -1,14 +1,9 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@import "tailwindcss";
+.ql-toolbar,
+.ql-container,
+.ql-editor {
+  border: none !important;
 }
-body {
-  min-width: 100vw;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  font-family: sans-serif;
+.ql-picker-label::before {
+  font-weight: bold;
 }

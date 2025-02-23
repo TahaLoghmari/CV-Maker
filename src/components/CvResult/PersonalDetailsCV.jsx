@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-import "../../styles/PersonalDetailsCV.css";
 export default function PersonalDetailsCV({
   firstName,
   lastName,

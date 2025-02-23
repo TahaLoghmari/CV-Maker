@@ -5,8 +5,7 @@ import PracticalExperience from "./PracticalExperience";
 import Projects from "./Projects";
 import CertificatesAchievements from "./CertificatesAchievements";
 import TechnicalSkills from "./TechnicalSkills";
-import "../../styles/cvCreation.css";
-export default function CvCreation({ info, set }) {
+export default function CvCreation({ info, set, toggle }) {
   const {
     personalDetails,
     educationalExperience,
@@ -16,7 +15,13 @@ export default function CvCreation({ info, set }) {
     technicalSkills,
   } = info;
   return (
-    <div className="cvCreation">
+    <div
+      className={
+        toggle
+          ? "cvCreation h-full w-full lg:max-w-[1024px] xl:block xl:w-1/2"
+          : "cvCreation hidden h-full w-full lg:max-w-[1024px] xl:block xl:w-1/2"
+      }
+    >
       <PersonalDetails
         firstName={personalDetails.firstName}
         lastName={personalDetails.lastName}

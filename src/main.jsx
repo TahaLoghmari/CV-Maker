@@ -4,11 +4,11 @@ if (!ReactDOM.findDOMNode) {
 }
 import { createRoot } from "react-dom/client";
 import React from "react";
-import "./index.css";
 import App from "./components/App";
+import "./index.css";
 
-createRoot(document.querySelector(".container")).render(
+createRoot(document.querySelector("#root")).render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>
+  </React.StrictMode>,
 );

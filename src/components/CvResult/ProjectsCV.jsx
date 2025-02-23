@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-import "../../styles/ProjectsCv.css";
 function Projects({ projects }) {
   return projects.map((project, index) => (
     <Project

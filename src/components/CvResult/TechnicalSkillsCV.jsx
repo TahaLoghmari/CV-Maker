@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-import "../../styles/TechnicalSkillsCV.css";
 export default function TechnicalSkillsCV({
   languages,
   frameworks,

@@ -1,18 +1,18 @@
 /* eslint-disable react/prop-types */
-import "../../styles/CertificatesAchievementsCV.css";
+import { View, Text } from "@react-pdf/renderer";
 export default function CertificatesAchievementsCV({ description }) {
   return (
-    <div className="CertificatesAchievementsCV">
-      <div className="CertificatesAchievementsCVTitle">
+    <View className="CertificatesAchievementsCV">
+      <View className="CertificatesAchievementsCVTitle">
         C
-        <span className="CertificatesAchievementsCVTitleRest">ERTIFICATES</span>{" "}
+        <Text className="CertificatesAchievementsCVTitleRest">ERTIFICATES</Text>{" "}
         / A
-        <span className="CertificatesAchievementsCVTitleRest">CHIEVEMENTS</span>
-      </div>
-      <div
+        <Text className="CertificatesAchievementsCVTitleRest">CHIEVEMENTS</Text>
+      </View>
+      <View
         className="PracticalExperiencedescription"
         dangerouslySetInnerHTML={{ __html: description }}
       />
-    </div>
+    </View>
   );
 }
